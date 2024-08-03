@@ -3,27 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/output.css" />
     <title>Lanchonete</title>
   </head>
   <body>
     <!-- HEADER -->
-     <header class="2-full h-[420px] bg-zinc-900  bg-home">
-        <div class="width-full h-full flex flex-col justify-center items-center">
-            <img src="./assets//hamb-1.png" alt="Logo Burger" class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+    <header class="w-full h-[420px] bg-zinc-900 bg-home">
+      <div class="width-full h-full flex flex-col justify-center items-center">
+        <img
+          src="./assets//hamb-1.png"
+          alt="Logo Burger"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
 
-            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Hamburgueria</h1>
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Hamburgueria</h1>
 
-            <span class="text-white font-medium"> Rua teste 10, Campo Grande - MS</span>
+        <span class="text-white font-medium">
+          Rua teste 10, Campo Grande - MS</span
+        >
 
-            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-              <span class="text-white font-bold"> Seg a Dom - 18:00 as 22:00</span>
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+          <span class="text-white font-bold"> Seg a Dom - 18:00 as 22:00</span>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- INICIO MENU-->
+    <h2
+      class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mt-9 mb-6"
+    >
+      Conheça nosso menu
+    </h2>
+
+    <div id="menu">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
+      >
+        <!-- ITEMS-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-1.png"
+            alt="Smash Burger"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+
+          <div>
+            <p class="font-bold">Hamburguer Smash</p>
+            <p class="text-sm">
+              Pão levinho de fermentação natural da Trigou, burger 160g, queijo
+              prato e maionese da casa.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 18.90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart"
+                data-name="Hamburguer Smash"
+                data-price="18.90"
+              >
+                <i class="ri-shopping-cart-2-fill text-lg text-white"></i>
+              </button>
             </div>
+          </div>
         </div>
 
-     </header>
-    <!-- END HEADER -->
+        <!-- FIM INTEMS-->
+
+        <!-- ITEMS-->
+        <div class="flex gap-2">
+          <img
+            src="./assets/hamb-2.png"
+            alt="Hamburguer Duplo"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+          />
+
+          <div>
+            <p class="font-bold">Hamburguer Smash</p>
+            <p class="text-sm">
+              Pão levinho de fermentação natural da Trigou, burger 160g, queijo
+              prato e maionese da casa.
+            </p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 32.90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart"
+                data-name="Hamburguer Duplo"
+                data-price="32.90"
+              >
+                <i class="ri-shopping-cart-2-fill text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- FIM INTEMS-->
+      </main>
+
+      <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mt-9 mb-6">
+          Bebidas
+        </h2>
+        <!-- GRID BEBIDAS -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu"
+        >
+                <!-- ITEMS-->
+                <div class="flex gap-2 w-full">
+                  <img
+                    src="./assets/refri-1.png"
+                    alt="Coca lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-200"
+                  />
+        
+                  <div class="w-full">
+                    <p class="font-bold">Coca Lata</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                      <p class="font-bold text-lg">R$ 6</p>
+                      <button
+                        class="bg-gray-900 px-5 rounded add-to-cart"
+                        data-name="Coca lata"
+                        data-price="6"
+                      >
+                        <i class="ri-shopping-cart-2-fill text-lg text-white"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- FIM INTEMS-->
+      
+      </div>
+        <!-- FIM GRID BEBIDAS -->
+      </div>
+    </div>
+
+    <!-- FIN MENU -->
   </body>
 </html>
- 
